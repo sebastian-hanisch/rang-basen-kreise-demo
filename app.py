@@ -76,7 +76,7 @@ with st.container(key="kopf"):
     st.title("🧩 Rang, Basen, Kreise, Abschluss")
 st.markdown(
     """
-Ein Matroid ist durch seine zulässigen (unabhängigen) Mengen bestimmt, aber das ist nur **eine** von fünf gleichwertigen Beschreibungen: **Basen** (die größten zulässigen Mengen), **Kreise** (die kleinsten unzulässigen), die **Rangfunktion** (wie groß die größte zulässige Teilmenge ist) und der **Abschluss** (welche Elemente den Rang nicht erhöhen). Jede hat ihre eigenen Axiome, jede bestimmt die anderen. Und der Tausch aus Stück 1 bekommt hier seine Struktur: Legt man zu einer Basis B ein Element e dazu, entsteht **genau ein Kreis**, der **Fundamentalkreis**; B − f + e ist **genau dann** wieder eine Basis, wenn f auf diesem Kreis liegt.
+Ein Matroid ist durch seine zulässigen (unabhängigen) Mengen bestimmt, aber das ist nur **eine** von fünf gleichwertigen Beschreibungen: **Basen** (die größten zulässigen Mengen), **Kreise** (die minimalen unzulässigen Mengen), die **Rangfunktion** (wie groß die größte zulässige Teilmenge ist) und der **Abschluss** (welche Elemente den Rang nicht erhöhen). Jede hat ihre eigenen Axiome, jede bestimmt die anderen. Und der Tausch aus Stück 1 bekommt hier seine Struktur: Legt man zu einer Basis B ein Element e dazu, entsteht **genau ein Kreis**, der **Fundamentalkreis**; B − f + e ist **genau dann** wieder eine Basis, wenn f auf diesem Kreis liegt.
 
 Dies ist das **vierte Stück** der Reihe „Matroide und Submodularität“. Weiter unten: vier Experimente (🔬), eine **Spielwiese**, **🚧 Wo die Annahmen enden** und der Expander **📐 Mathematische Formulierung**.
 """
@@ -252,8 +252,8 @@ st.markdown(
     """
 | Annahme | Was passiert, wenn sie verletzt ist | Wer setzt an |
 |---|---|---|
-| **Die Grundmenge ist klein (höchstens 16 Elemente)** | Rang, Basen, Kreise und Flache werden hier aus allen Teilmengen berechnet. Die Prüfung aller fünf Axiomsysteme geht nur bis 12 Elemente, die Aufzählung aller Systeme nur bis 5 Elemente. Bei großen Matroiden rechnet man mit der Struktur (Rangorakel, Darstellung). | Stück 14 (Verfahrenswahl) |
-| **Das System ist ein Matroid** | Bei den fünf Systemen, die keine Matroide sind, liegen in B + e oft mehrere Kreise (Experiment 4), und die maximalen Mengen sind verschieden groß; Fundamentalkreis und Rang sind dort nicht mehr dasselbe Gerüst. | Stück 2 (Unabhängigkeitssysteme) |
+| **Die Grundmenge ist klein (höchstens 16 Elemente)** | Rang, Basen, Kreise und Flache werden hier aus allen Teilmengen berechnet. Die Prüfung aller fünf Axiomsysteme geht nur bis 12 Elemente, die Aufzählung aller Systeme nur bis 5 Elemente. Bei großen Matroiden rechnet man mit der Struktur (Rangorakel, Darstellung). | Stück 17 (Verfahrenswahl) |
+| **Das System ist ein Matroid** | Bei vier der fünf Systeme, die keine Matroide sind, liegen in B + e oft mehrere Kreise (beim Schnitt aus Wald und Farbregel nur selten; Experiment 4), und bei vier haben die maximalen Mengen verschiedene Größen; Fundamentalkreis und Rang sind dort nicht mehr dasselbe Gerüst. | Stück 2 (Unabhängigkeitssysteme) |
 | **Beispiele sind klein und zufällig** | Die Zahlen gelten für den gezeigten Plan, nicht allgemein; dass Wald, Farben, Anschluss, uniforme und lineare Systeme Matroide sind, ist bekannt und wird hier nur an den gezeigten Systemen gemessen. | Stück 3 (Beispiele) |
 | **Kreise und Basen, nicht Kokreise** | Das Gegenstück zum Kreis (der Kokreis, im Graphen ein minimaler Schnitt) und das duale Matroid gehören zur Dualität. | Stück 6 |
 | **Rangform bei Submodularität** | Dass der Rang eines Matroids submodular ist, wird hier an kleinen Systemen geprüft (abnehmender Zusatznutzen); die Submodularität als Verfahren (Greedy 1 − 1/e) kommt in Stück 11. | Stück 11 |
