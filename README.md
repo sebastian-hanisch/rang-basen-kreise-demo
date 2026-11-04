@@ -1,7 +1,6 @@
 # Rang, Basen, Kreise, Abschluss – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-rang-basen-kreise-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-rang-basen-kreise-demo.streamlit.app/)**
 
 Viertes Stück der Reihe **Matroide und Submodularität** (Bereich Kombinatorik) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Ein Matroid ist durch seine zulässigen (unabhängigen) Mengen bestimmt, aber das ist nur **eine** von fünf gleichwertigen Beschreibungen: **Basen** (die größten zulässigen Mengen), **Kreise** (die minimalen unzulässigen Mengen), die **Rangfunktion** (wie groß die größte zulässige Teilmenge ist) und der **Abschluss** (welche Elemente den Rang nicht erhöhen). Die Demo zeigt, dass jede Beschreibung die anderen bestimmt, dass die fünf Axiomsysteme auf allen kleinen Systemen übereinstimmen, und dass der Tausch aus Stück 1 der **Fundamentalkreis** ist.
 
